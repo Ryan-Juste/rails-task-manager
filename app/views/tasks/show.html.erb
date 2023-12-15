@@ -1,0 +1,9 @@
+<h1>Détails de la tâche</h1>
+
+<div>
+  <h3><%= @task.title %></h3>
+  <p><%= @task.details %></p>
+  <p>Complété : <%= @task.completed ? 'Oui' : 'Non' %></p>
+</div>
+
+<%= link_to 'Éditer la tâche', edit_task_path(@task) %>
